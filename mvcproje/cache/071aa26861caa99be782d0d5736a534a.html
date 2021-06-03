@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="http://localhost/PROJELER/mvcproje/views/design/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://localhost/PROJELER/mvcproje/views/design/js/jquery.min.js"></script>
+<script src="http://localhost/PROJELER/mvcproje/views/design/js/bizim.js"></script>
+<!-- Custom Theme files -->
+<link href="http://localhost/PROJELER/mvcproje/views/design/css/style.php" rel="stylesheet" type="text/css" media="all" />
+<link href="http://localhost/PROJELER/mvcproje/views/design/css/component.css" rel='stylesheet' type='text/css' />
+
+
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script type="text/javascript">
+        function reloadEt(){
+            img=document.getElementById("capt");
+            var deger=$('#capt').attr('src');
+            img.src= deger;
+        }
+    </script>
+
+
+
+
+
+
+<title>TEZ UYGULAMASI</title>
+
+
+
+  <meta name="description" content="PHP-Framework-MVC-E-ticaret " />
+  <meta name="keywords" content="PHP, Framework, MVC, Eticaret, Egitim " />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<!-- for bootstrap working -->
+	<script type="text/javascript" src="http://localhost/PROJELER/mvcproje/views/design/js/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
+<!-- cart -->
+	<script src="http://localhost/PROJELER/mvcproje/views/design/js/simpleCart.min.js"> </script>
+<!-- cart -->
+<link rel="stylesheet" href="http://localhost/PROJELER/mvcproje/views/design/css/flexslider.css" type="text/css" media="screen" />
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="header">
+		<div class="header-top-strip">
+			<div class="container">
+				<div class="header-top-left">
+					<ul>
+                    
+                                
+            
+            <li><a href="http://localhost/PROJELER/mvcproje/uye/giris"><span class="glyphicon glyphicon-user"> </span>Giriş </a></li>
+						<li><a href="http://localhost/PROJELER/mvcproje/uye/hesapOlustur"><span class="glyphicon glyphicon-lock"> </span>Hesap Oluştur</a></li>	
+			
+            
+			
+			                    
+								
+					</ul>
+				</div>
+				<div class="header-right">
+						<div class="cart box_1" id="SepetDurum">
+                        
+                        
+		
+        
+							<div class="clearfix"> </div>
+						</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- header-section-ends -->
+			<div class="banner-top">
+		<div class="container">
+				<nav class="navbar navbar-default" role="navigation">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+           
+				<div class="logo">
+					<h1><a href="http://localhost/PROJELER/mvcproje"><span>E</span> -Shop</a></h1>
+				</div>
+	    </div>
+	    <!--/.navbar-header-->
+	
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav">
+       
+			<li><a href="http://localhost/PROJELER/mvcproje">Anasayfa</a></li>
+            
+  <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ERKEK <b class="caret"></b></a>
+		            <ul class="dropdown-menu multi-column columns-3">
+			            <div class="row"><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>Dış Giyim</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/1/tisort">Tişört</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/2/pantolon">Pantolon</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/3/ceket">Ceket</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/4/gomlek">Gömlek</a></li></ul> </div><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>İç Giyim</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/5/atlet">Atlet</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/6/boxer">Boxer</a></li></ul> </div><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>Ayakkabı</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/10/klasik">Klasik</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/9/spor">Spor</a></li></ul> </div><div class="clearfix"></div>
+			            </div>
+		            </ul>
+		        </li> <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">KADIN <b class="caret"></b></a>
+		            <ul class="dropdown-menu multi-column columns-3">
+			            <div class="row"><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>İç Giyim</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/11/camasir">Çamaşır</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/12/iclik">İçlik</a></li></ul> </div><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>Çanta</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/13/deri">Deri</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/14/kumas">Kumaş</a></li></ul> </div><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>Saat</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/15/spor">Spor</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/16/klasik">Klasik</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/17/deri-kordon">Deri Kordon</a></li></ul> </div><div class="clearfix"></div>
+			            </div>
+		            </ul>
+		        </li> <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ÇOCUK <b class="caret"></b></a>
+		            <ul class="dropdown-menu multi-column columns-3">
+			            <div class="row"><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>Ayakkabı</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/18/isikli">Işıklı</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/19/spor">Spor</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/20/ilk-adim">İlk Adım</a></li></ul> </div><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>Oyuncak</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/21/araba">Araba</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/22/bebek">Bebek</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/23/tren">Tren</a></li></ul> </div><div class="col-sm-4">
+					            <ul class="multi-column-dropdown">
+									<h6>Giyim</h6><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/24/zibin">Zıbın</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/25/tisort">Tişört</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/26/pantolon">Pantolon</a></li></ul> </div><div class="clearfix"></div>
+			            </div>
+		            </ul>
+		        </li>		       
+               
+               
+               
+               
+               
+					<li><a href="http://localhost/PROJELER/mvcproje/sayfalar/iletisim">İletişim</a></li>
+	        </ul>
+	    </div>
+	    <!--/.navbar-collapse-->
+	</nav>
+	<!--/.navbar-->
+</div>
+	</div>
+		</div>
+
+  <div class="container">
+	   <div class="products-page">
+			<div class="products">
+				<div class="product-listy">
+					<h2>Stoğu Azalanlar</h2>
+					<ul class="product-list">
+                    						
+						
+					</ul>
+				</div>
+		
+             	
+           	
+				
+
+			</div>
+			<div class="new-product">
+				<div class="col-md-5 zoom-grid">
+					<div class="flexslider">
+						<ul class="slides">
+                        
+                        
+							<li data-thumb="http://localhost/PROJELER/mvcproje/views/design/images/10.png">
+								<div class="thumb-image">                               
+                                
+                              
+                                
+                                <img src="http://localhost/PROJELER/mvcproje/views/design/images/10.png" data-imagezoom="true" class="img-responsive" alt="Kot Pantolon" /> </div>
+							</li>
+                            
+							<li data-thumb="http://localhost/PROJELER/mvcproje/views/design/images/11.png">
+                            
+								<div class="thumb-image"> <img src="http://localhost/PROJELER/mvcproje/views/design/images/11.png" data-imagezoom="true" class="img-responsive" alt="Kot Pantolon" /> </div>
+							</li>
+                            
+                            
+							<li data-thumb="http://localhost/PROJELER/mvcproje/views/design/images/12.png">
+							<div class="thumb-image"> <img src="http://localhost/PROJELER/mvcproje/views/design/images/12.png" data-imagezoom="true" class="img-responsive" alt="Kot Pantolon" /> </div>
+							</li> 
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-7 dress-info">
+					<div class="dress-name">
+                    
+                            
+            
+						<h3> Kot Pantolon</h3>
+	<span> 90.00</span>
+						<div class="clearfix"></div>
+						<p><b>ÜRÜN HAKKINDA AÇIKLAMA</b> ÜRÜN HAKKINDA AÇIKLAMA=Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+					</div>
+					<div class="span span1">
+						<p class="left">KUMAŞ</p>
+						<p class="right"> Saten</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span2">
+						<p class="left">ÜRETİM YERİ</p>
+						<p class="right"> Kamboçya</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span3">
+						<p class="left">COLOR</p>
+						<p class="right"> Sarı</p>
+						<div class="clearfix"></div>
+					</div>
+					
+					<div class="purchase">
+                    
+                    
+                    	<div class="row" id="Mevcut"> 
+                       
+                        <div class="col-md-6" id="sonuc"></div>
+                        
+                      <div class="col-md-3 text-right">
+                      
+                      <form id="SepeteForm">
+                      
+               <input type="number" min="1" max="10" value="1" name="adet" class="form-control" />  
+                      
+                      </div>                      
+                      
+                        
+                        
+                      <div class="col-md-3">
+             <input type="hidden" name="id" value="4"  />  
+                      <input type="button" class="btn hizala_3" value="Sepete Ekle" id="SepetBtn"></div>   
+                       </form>
+                       
+                       
+                        
+                        
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+						
+						
+						<div class="clearfix"></div>
+					</div>
+				<script src="http://localhost/PROJELER/mvcproje/views/design/js/imagezoom.js"></script>
+					<!-- FlexSlider -->
+					<script defer src="http://localhost/PROJELER/mvcproje/views/design/js/jquery.flexslider.js"></script>
+					<script>
+						// Can also be used with $(document).ready()
+						$(window).load(function() {
+						  $('.flexslider').flexslider({
+							animation: "slide",
+							controlNav: "thumbnails"
+						  });
+						});
+					</script>
+				</div>
+				<div class="clearfix"></div>
+                
+					<div class="reviews-tabs">
+     
+             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+			<ul id="myTab" class="nav nav-tabs" role="tablist">
+			  <li role="presentation" class="active"><a href="#bilgi" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Daha fazla bilgi</a></li>
+			  <li role="presentation" class=""><a href="#ozellik" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Özellikler</a></li>
+			  
+              
+    			  <li role="presentation" class=""><a href="#yorum" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Yorumlar - 0 </a></li>
+              
+              
+			</ul>
+            
+            
+			<div id="myTabContent" class="tab-content">
+			  <div role="tabpanel" class="tab-pane fade active in" id="bilgi" aria-labelledby="home-tab">
+				<p>Kırmızı Tişört için ekstra bilgi</p>
+			  </div>
+			  <div role="tabpanel" class="tab-pane fade " id="ozellik" aria-labelledby="profile-tab">
+				<p>Kırmızı Tişört için özellikler</p>
+			  </div>
+			  <div role="tabpanel" class="tab-pane fade" id="yorum" aria-labelledby="dropdown1-tab">
+              
+              <div class="alert alert-danger text-center">Yorum yapabilmek için giriş yapmanız gerekmektedir.</div><div class="alert alert-danger text-center">Bu ürüne ait yorum bulunmamaktadır.</div>              
+				
+                 
+                
+                
+                
+			  </div>
+			  
+			</div>
+		   </div>
+      
+      
+      	
+	</div>
+
+			</div>
+			<div class="clearfix"></div>
+			</div>
+   </div>
+   
+   
+   
+   
+   
+   <div class="other-products products-grid">
+		<div class="container">
+			<header>
+				<h3 class="like text-center">BENZER ÜRÜNLER</h3>   
+			</header>
+            
+                       <div class="col-md-4 product simpleCart_shelfItem text-center">
+<a href="http://localhost/PROJELER/mvcproje/urunler/detay/3/kumas-pantolon">
+
+<img src="http://localhost/PROJELER/mvcproje/views/design/images/7.png" alt="Kumaş Pantolon" /></a>
+
+						<div class="mask">
+							<a href="http://localhost/PROJELER/mvcproje/urunler/detay/3/kumas-pantolon">İNCELE</a>
+							
+						</div>
+						
+						<a class="product_name" href="http://localhost/PROJELER/mvcproje/urunler/detay/3/kumas-pantolon">Kumaş Pantolon</a>
+						<p><a class="item_add" href="http://localhost/PROJELER/mvcproje/urunler/detay/3/kumas-pantolon"><i></i> <span class="item_price">140.00</span></a></p>
+					</div>            
+            			
+				
+        
+                    
+                    
+                    
+					<div class="clearfix"></div>
+				   </div>
+				   </div>
+   <!-- content-section-ends -->
+		<div class="news-letter">
+			<div class="container">
+           
+            
+    		  
+        <div class="row">
+
+            <div class="col-md-12" id="Bulten">
+                <div class="join">
+                    <h6>BÜLTENE KAYIT</h6>
+                    <div class="sub-left-right">
+                        <form id='bultenForm' >                        <input type="text" value="Mail Adresinizi Yazınız" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mail Adresinizi Yazınız';}"  name="mailadres"/>
+
+                        <input type='button' value='KAYIT OL' id='bultenBtn' >
+                        </form>                     </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+            </div>
+
+        </div>
+
+                        
+                
+                
+			</div>
+		</div>
+
+<!-- The modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="modalLabel">Teslimat adresi ve kişisel bilgiler</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+    	<div class="footer">
+		<div class="container">
+		 <div class="footer_top">
+			<div class="span_of_4">
+				<div class="col-md-3 span1_of_4">
+                
+           
+
+                               
+					<h4>En Çok Satanlar</h4>
+					<ul class="f_nav">
+                    
+                         <li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/1/beyaz-tisort">Beyaz Tişört</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/5/keten-ceket">Keten Ceket</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/4/kot-pantolon">Kot Pantolon</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/3/kumas-pantolon">Kumaş Pantolon</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/6/kumas-ceket">Kumaş Ceket</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/9/mor-tisort">Mor Tişört</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/10/keten-gomlek">Keten Gömlek</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/11/yazlik-gomlek">Yazlık Gömlek</a></li>                    
+                    
+								
+					</ul>	
+				</div>
+				<div class="col-md-3 span1_of_4">
+					<h4>Yardım</h4>
+					<ul class="f_nav">
+<li><a href="http://localhost/PROJELER/mvcproje/sayfalar/kargonezamangelir">Kargo ne zaman gelir</a></li>
+<li><a href="http://localhost/PROJELER/mvcproje/sayfalar/iadehakki">İade hakkı</a></li>
+<li><a href="http://localhost/PROJELER/mvcproje/sayfalar/musterihizmetleri">Müşteri hizmetleri</a></li>
+<li><a href="http://localhost/PROJELER/mvcproje/sayfalar/gizlilikpolitikasi">Gizlilik politikası</a></li>
+<li><a href="http://localhost/PROJELER/mvcproje/sayfalar/satissozlesmesi">Satış sözleşmesi</a></li>
+<li><a href="http://localhost/PROJELER/mvcproje/sayfalar/iletisim">Bize Ulaşın</a></li>
+					</ul>	
+				</div>
+				<div class="col-md-3 span1_of_4">
+					<h4>Stoğu Azalanlar</h4>
+					<ul class="f_nav">
+                    
+                                         <li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/50/kot-pantolon">Kot Pantolon</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/4/kot-pantolon">Kot Pantolon</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/48/polo">Polo</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/44/kara-tren">Kara Tren</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/5/keten-ceket">Keten Ceket</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/14/keten-ceket">Keten Ceket</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/18/nike-beyaz">Nike-Beyaz</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/detay/22/x-model">X MODEL</a></li>  
+                    
+                    
+            
+					</ul>					
+				</div>
+				<div class="col-md-3 span1_of_4">
+					<h4>Rastgele Kategoriler</h4>
+					<ul class="f_nav">
+                    
+                    
+                      <li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/15/spor">Spor</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/13/deri">Deri</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/1/tisort">Tişört</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/24/zibin">Zıbın</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/4/gomlek">Gömlek</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/11/camasir">Çamaşır</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/14/kumas">Kumaş</a></li><li><a href="http://localhost/PROJELER/mvcproje/urunler/kategori/20/ilk-adim">İlk Adım</a></li>  
+                    
+				
+					</ul>			
+				</div>
+				<div class="clearfix"></div>
+				</div>
+		  </div>
+		  <div class="copyright text-center">
+				<p>© 2021 Eshop. All Rights Reserved | Design by   <a href="http://w3layouts.com">  W3layouts</a></p>
+		  </div>
+		</div>
+		</div>
+</body>
+</html>
+
+
